@@ -1,11 +1,35 @@
 .App {
   text-align: center;
+  background: linear-gradient(45deg, #00153e, #05202b); 
+  color: white ;
+  justify-content: center;
+
+}
+.NewMovies{
+  margin: 25px;
+  margin-left: 14%;
+  background-color: white;
+  color: #00153e;
+  width: 75%;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.lab{
+  font-weight: bold;
+}
+ h6{
+    font-weight: bold;
+    font-size: 50%;
+}
+.newForm{
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
+  flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
