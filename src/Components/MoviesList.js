@@ -5,9 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const MoviesList = ({list}) => {
     console.log("list:", list)
     return (
-        <div style={{backgroundColor:'white', display: "flex",justifyContent: "space-between", flexWrap: "wrap", padding:'10px', margin: "50px", rowGap: "15px",columnGap:"10px" }} >
+        <div style={{backgroundColor:'white', display: "flex",justifyContent: "space-between", flexWrap: "wrap", padding:'20px', margin: "50px", rowGap: "15px",columnGap:"10px", alignItems:'center' }} >
             {list.map((movie) =>
-                <MoviesCard key={movie.id} {...movie}/> //Spreadind
+                <MoviesCard key={movie.id} {...movie}/> //Spreading ou <MoviesCard key={movie.id} id={movie.id} titre={movie.titre} description={movie.description} posterURL={movie.posterURL} note={movie.note} />
+      
             )};
         </div>
     )
